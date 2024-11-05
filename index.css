@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  font-size: 15px;
+  margin: 0;
+}
+
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --verydarkblue: hsl(234, 12%, 34%);
+  --grayishblue: hsl(229, 6%, 66%);
+  --verylightgray: hsl(0, 0%, 98%);
+}
+
+body {
+  padding: 5em 2.1em;
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  color: var(--verydarkblue);
+}
+
+.header > h1 {
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+
+.header > p {
+  margin-bottom: 5em;
+}
+
+.header > h2 {
+  margin-bottom: 0.8em;
+}
+
+.title {
+  font-size: 1.7rem;
+}
+
+.info {
+  color: var(--grayishblue);
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+.card {
+  padding: 1.4em;
+  border-radius: 0.4em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  margin-bottom: 2em;
+  box-shadow: 0 4px 8px rgba(72, 99, 133, 0.1), 0 8px 16px rgba(72, 99, 133, 0.05);
+}
+
+.card > h1 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5em;
+}
+
+.card > p {
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  text-align: left;
+}
+
+.card > img {
+  max-width: 100%;
+}
+
+.card > .imgContainer {
+  margin-top: 1.5em;
+  align-self: flex-end;
+}
+
+@media screen and (min-width: 790px) {
+  body {
+    padding: 4em;
+  }
+
+  .header {
+    margin: 0 auto;
+    max-width: 40%;
+  }
+
+  .card-feature {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    max-width: 85%;
+    width: 100%;
+    margin: 2em auto;
+  }
+
+  .card {
+    margin-bottom: 0;
+  }
+}
